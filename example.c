@@ -27,8 +27,14 @@
 #include "ext/standard/info.h"
 #include "php_example.h"
 #include "closure/closure.h"
+#include "array/eg_array_search.h"
 ZEND_BEGIN_ARG_INFO(closure_arg_info, 0)
     ZEND_ARG_INFO(0, func)
+ZEND_END_ARG_INFO()
+
+ZEND_BEGIN_ARG_INFO(eg_array_search_arg_info, 0)
+	ZEND_ARG_INFO(0, arr)
+    ZEND_ARG_INFO(0, key)
 ZEND_END_ARG_INFO()
 /* {{{ PHP_MINIT_FUNCTION
  */
@@ -92,6 +98,7 @@ PHP_MINFO_FUNCTION(example)
  * Every user visible function must have an entry in example_functions[].
  */
 const zend_function_entry example_functions[] = {
+	PHP_FE(eg_array_search, eg_array_search_arg_info)
 	PHP_FE(closure, closure_arg_info)
 	PHP_FE_END	/* Must be the last line in example_functions[] */
 };

@@ -10,4 +10,9 @@ $b = closure(function () use ($a) {
 });
 echo $a . "\n";
 echo $b . "\n";
+
+$arr = ["key"=> 2];
+eg_array_search($arr, "key");
+$arr = ["key"=> "value"];
+eg_array_search($arr, "key");
 ?>

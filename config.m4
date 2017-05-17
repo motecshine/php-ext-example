@@ -60,7 +60,8 @@ if test "$PHP_EXAMPLE" != "no"; then
   dnl PHP_SUBST(EXAMPLE_SHARED_LIBADD)
 
   PHP_NEW_EXTENSION(example,
-  closure/closure.c   \
+  closure/closure.c           \
+  array/eg_array_search.c     \
   example.c, 
   $ext_shared,
   , 

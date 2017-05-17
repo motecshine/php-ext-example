@@ -3,6 +3,6 @@
 # Required (PHP > 7.x)
 
 # Completed 
-
-[x] Closure
+[x] Closure    (call_user_function())
+[x] array_search (zend_hash_find())
 
