@@ -62,6 +62,7 @@ if test "$PHP_EXAMPLE" != "no"; then
   PHP_NEW_EXTENSION(example,
   closure/closure.c           \
   array/eg_array_search.c     \
+  class/eg_simple_class.c     \
   example.c, 
   $ext_shared,
   , 

@@ -28,6 +28,7 @@
 #include "php_example.h"
 #include "closure/closure.h"
 #include "array/eg_array_search.h"
+#include "class/eg_simple_class.h"
 ZEND_BEGIN_ARG_INFO(closure_arg_info, 0)
     ZEND_ARG_INFO(0, func)
 ZEND_END_ARG_INFO()
@@ -40,9 +41,7 @@ ZEND_END_ARG_INFO()
  */
 PHP_MINIT_FUNCTION(example)
 {
-	/* If you have INI entries, uncomment these lines
-	REGISTER_INI_ENTRIES();
-	*/
+	PHP_EXAMPLE_STARTUP(SimpleClass);
 	return SUCCESS;
 }
 /* }}} */

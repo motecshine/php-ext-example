@@ -15,4 +15,10 @@ $arr = ["key"=> 2];
 eg_array_search($arr, "key");
 $arr = ["key"=> "value"];
 eg_array_search($arr, "key");
+
+use Example\SimpleClass;
+
+$simpleClass = new SimpleClass;
+
+$simpleClass->helloWorld();
 ?>
