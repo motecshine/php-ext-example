@@ -63,6 +63,7 @@ if test "$PHP_EXAMPLE" != "no"; then
   closure/closure.c           \
   array/eg_array_search.c     \
   class/eg_simple_class.c     \
+  string/regex/eg_regex.c     \
   example.c, 
   $ext_shared,
   , 
